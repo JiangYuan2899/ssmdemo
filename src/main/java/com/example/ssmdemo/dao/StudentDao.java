@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 @Repository
 public interface StudentDao {
-    //add
+    //add测试
     @Insert("insert into students(name) value(#{name})")
     void add(String name);
     //delete
