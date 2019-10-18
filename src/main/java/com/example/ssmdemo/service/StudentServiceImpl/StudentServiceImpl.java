@@ -5,10 +5,10 @@ import com.example.ssmdemo.domain.Student;
 import com.example.ssmdemo.service.IstudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
-@Transactional
+//@Transactional
 @Service
 public class StudentServiceImpl implements IstudentService {
     @Autowired

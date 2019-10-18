@@ -5,6 +5,7 @@ import com.example.ssmdemo.service.IstudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 //RestController是组合注解可以返回json格式，如果是对象就返回json；
 @RestController
@@ -42,6 +43,7 @@ public class StudentControllerImpl {
     @RequestMapping("/list")
     public List<Student> list(){
         List <Student> list = service.list();
+        //List <User> list2 = new ResponseEntity(userService.queryUers(), HttpStatus.OK);
         return list;
     }
 }
